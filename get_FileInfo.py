@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-# @Author: Li Chenguang
-# @Email:  chendemo12@gmail.com
+# @Author: LiChenguang
 # @Date:   2019-09-24
-# @Last Modified by:   chendemo12
-# @Last Modified time: 2019-09-24
-# -*- coding: UTF8 -*-
+# @Email:  chendemo12@gmail.com
+# @sys:    elementary OS
+# @Last Modified by:   LiChenguang
+# @Last Modified time: 2019-11-08
 
 import time
 import os
@@ -47,7 +47,8 @@ class fileInfo():
 
 if __name__ == '__main__':
 
-    filepath = os.getcwd() + "\\KnowledgeGraph.wiki\\Git.md"
+    filepath = os.getcwd() + "//KnowledgeGraph.wiki//Git.md"
     fi = fileInfo(filepath)
     info = fi.get_FileInfo()
     print(info)
+
