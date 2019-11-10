@@ -1,0 +1,22 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 0,
+    "editor.autoIndent": true,
+    "editor.codeLens": true,
+    "python.pythonPath": "/usr/bin/python3",
+    "terminal.integrated.fontFamily": "monospace",//字体设置
+        //终端颜色配置
+    "workbench.colorCustomizations" :
+        {
+	//可以将鼠标放到下面的色号上根据自己的偏好进行选择
+	        "terminal.foreground" : "#13a9ff",
+ 	        "terminal.background" : "#070b13"
+        },
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.letterSpacing": 0.1,
+    "terminal.integrated.fontSize": 17, //字体大小设置
+    "terminal.integrated.shell.linux": "/bin/zsh",
+
+}

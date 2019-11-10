@@ -83,15 +83,16 @@ def local_indexCreate(folder):
         f.write("| 网络地址 | 本地地址 | 修改时间 | 文件大小KB |\n")
         f.write("| :-- | :-: | :-: | :-: |\n")
 
-        for file in md_files:
-            filepath = path + file
-            fi = F.fileInfo(filepath)
-            info = fi.get_FileInfo()
-            file = file.replace(" ", "-")
-            full_url = base_url + file.replace(".md", "")
+    for file in md_files:
+        filepath = path + file
+        fi = F.fileInfo(filepath)
+        info = fi.get_FileInfo()
+        file = file.replace(" ", "-")
+        full_url = base_url + file.replace(".md", "")
 
-            f.write("| [{}]({}) | [{}]({}) | {} | {} |\n".format
-                (file,full_url, local, filepath, info['last_modified_time'],info['file_size']))
+        f.write("| [{}]({}) | [{}]({}) | {} | {} |\n".format
+            (file,full_url, local, filepath, info['last_modified_time'],
+                info['file_size']))
 
 
 def local_homeIndex():

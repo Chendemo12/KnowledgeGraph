@@ -47,7 +47,7 @@ class fileInfo():
 
 if __name__ == '__main__':
 
-    filepath = os.getcwd() + "//KnowledgeGraph.wiki//Git.md"
+    filepath = os.getcwd() + "//LiIndex//LinuxZSH.md"
     fi = fileInfo(filepath)
     info = fi.get_FileInfo()
     print(info)
