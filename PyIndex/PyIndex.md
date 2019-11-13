@@ -19,4 +19,4 @@
 | [Python进阶.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Python进阶) | [LOCAL](/home/lichenguang/Documents/GitHub/KnowledgeGraph//PyIndex//Python进阶.md) | 2019-11-08 | 45.63 |
 | [Python参考书籍.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Python参考书籍) | [LOCAL](/home/lichenguang/Documents/GitHub/KnowledgeGraph//PyIndex//Python参考书籍.md) | 2019-11-08 | 2.49 |
 | [Qt命令翻译.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Qt命令翻译) | [LOCAL](/home/lichenguang/Documents/GitHub/KnowledgeGraph//PyIndex//Qt命令翻译.md) | 2019-11-08 | 1.92 |
-| [PyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/PyIndex) | [LOCAL](/home/lichenguang/Documents/GitHub/KnowledgeGraph//PyIndex//PyIndex.md) | 2019-11-10 | 0.0 |
+| [PyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/PyIndex) | [LOCAL](/home/lichenguang/Documents/GitHub/KnowledgeGraph//PyIndex//PyIndex.md) | 2019-11-13 | 0.0 |

@@ -340,3 +340,66 @@ sudo gedit /usr/share/applications/netease-cloud-music.desktop
 Exec=netease-cloud-music --force-device-scale-factor=1.25 %U
 # 1.25可自行修改，表示缩放比
 ```
+
+
+
+## 8. 更改Ubuntu默认Python版本方法
+
+一般Ubuntu默认的Python版本都为2.x, 如何改变Python的默认版本呢？假设我们需要把Python3.5设置为默认版本：
+首先查看Python默认版本:
+
+```ruby
+ubuntu@user~$:python --version
+Python 2.7
+```
+
+搜索系统是否已经安装Python3.5:
+
+```ruby
+ubuntu@user~$:whereis python3.5
+```
+
+如果结果里有`/usr/bin/python3.5`说明已经安装，如果没有则需要手动安装。
+
+安装完成后，需要删除原有的Python连接文件:
+
+```ruby
+ubuntu@user~:rm /user/bin/python
+```
+
+然后建立指向Python3.5的软连接：
+
+```ruby
+ubuntu@user~:ln -s /usr/bin/python3.5 /usr/bin/python
+```
+
+之后把路径`/usr/bin/`加入环境变量PATH中：
+
+```ruby
+ubuntu@user~:PATH=/usr/bin:$PATH
+```
+
+现在输入`python --version`你就会发现python默认版本变为Python3.5了:)
+
+## 9. 修改anaconda为默认Python
+
+1.修改`~/.bashrc`
+
+```bash
+sudo gedit ~/.bashrc
+```
+
+2.添加`export PATH=/home/lishanliao/anaconda3/bin:$PATH`
+
+3.更新`bashrc`
+
+```bash
+source ~/.bashrc
+```
+
+然后输入python得到显示
+
+![1573471625935](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/1573471625935.png)
+
+说明启动的是anaconda的python。
+

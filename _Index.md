@@ -25,29 +25,33 @@
 
 | 网络地址  | 修改时间 | 文件大小KB |
 | :-- | :-: | :-: |
-| [Git教程.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git教程) | 2019-11-08 | 108.85 |
-| [百度翻译API.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/百度翻译API) | 2019-11-08 | 28.0 |
-| [有道智云短语音识别API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云短语音识别API开发文档) | 2019-11-08 | 9.63 |
-| [Git-tips.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git-tips) | 2019-11-08 | 37.97 |
-| [MyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MyIndex) | 2019-11-10 | 2.0 |
-| [有道云文本翻译API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道云文本翻译API开发文档) | 2019-11-08 | 15.94 |
-| [有道智云实时语音识别开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云实时语音识别开发文档) | 2019-11-08 | 9.64 |
-| [MySQLGrammar.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MySQLGrammar) | 2019-11-08 | 9.54 |
-| [Git.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git) | 2019-11-08 | 37.37 |
+| [Git教程.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git教程) | 2019-11-10 | 108.85 |
+| [百度翻译API.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/百度翻译API) | 2019-11-10 | 28.0 |
+| [有道智云短语音识别API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云短语音识别API开发文档) | 2019-11-10 | 9.63 |
+| [Git-tips.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git-tips) | 2019-11-10 | 37.97 |
+| [MyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MyIndex) | 2019-11-10 | 1.83 |
+| [有道云文本翻译API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道云文本翻译API开发文档) | 2019-11-10 | 15.94 |
+| [有道智云实时语音识别开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云实时语音识别开发文档) | 2019-11-10 | 9.64 |
+| [MySQLGrammar.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MySQLGrammar) | 2019-11-10 | 9.54 |
+| [Git.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git) | 2019-11-10 | 37.37 |
 # LiIndex 目录导航
 
 | 网络地址  | 修改时间 | 文件大小KB |
 | :-- | :-: | :-: |
 | [Install-Sublime-Text-3.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Install-Sublime-Text-3) | 2019-10-12 | 2.16 |
 | [LinuxZSH.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/LinuxZSH) | 2019-11-07 | 7.68 |
-| [用conda创建python虚拟环境.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/用conda创建python虚拟环境) | 2019-11-06 | 1.68 |
+| [vim快捷键.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/vim快捷键) | 2019-11-10 | 33.15 |
+| [用conda创建python虚拟环境.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/用conda创建python虚拟环境) | 2019-11-11 | 1.68 |
 | [Linux常用命令解析.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Linux常用命令解析) | 2019-11-08 | 10.46 |
 | [GNOME-Shell-扩展.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/GNOME-Shell-扩展) | 2019-11-07 | 6.24 |
 | [Eric6+Qt5.7+PyQt5.7-Ubuntu18.04下安装指南.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Eric6+Qt5.7+PyQt5.7-Ubuntu18.04下安装指南) | 2019-11-07 | 9.01 |
 | [Ubuntu安装IBbus输入法.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Ubuntu安装IBbus输入法) | 2019-11-07 | 10.46 |
-| [解决Ubuntu系统中WPS不能输入中文.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/解决Ubuntu系统中WPS不能输入中文) | 2019-11-08 | 4.07 |
-| [Linux零碎笔记.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Linux零碎笔记) | 2019-11-07 | 13.78 |
-| [Ubuntu-18.04-配置PyQt5开发环境.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Ubuntu-18.04-配置PyQt5开发环境) | 2019-11-09 | 6.82 |
+| [解决Ubuntu系统中WPS不能输入中文.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/解决Ubuntu系统中WPS不能输入中文) | 2019-11-10 | 4.11 |
+| [Linux零碎笔记.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Linux零碎笔记) | 2019-11-11 | 14.97 |
+| [Ubuntu-18.04-配置PyQt5开发环境.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Ubuntu-18.04-配置PyQt5开发环境) | 2019-11-10 | 6.82 |
+| [CentOS7Apache服务的安装与配置.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/CentOS7Apache服务的安装与配置) | 2019-11-12 | 21.23 |
+| [在Ubuntu18.04上安装和配置Apache2Web服务器.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/在Ubuntu18.04上安装和配置Apache2Web服务器) | 2019-11-12 | 12.53 |
 | [Ubuntu配置GitHub-SSH.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Ubuntu配置GitHub-SSH) | 2019-11-08 | 7.43 |
-| [LiIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/LiIndex) | 2019-11-10 | 2.57 |
+| [LiIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/LiIndex) | 2019-11-10 | 3.03 |
 | [Grub-主题修改.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Grub-主题修改) | 2019-11-09 | 0.89 |
+| [CentOS7安装python3.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/CentOS7安装python3) | 2019-11-11 | 2.73 |
