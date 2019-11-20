@@ -1,7 +1,0 @@
-尝试在命令行相同的操作： 
-一旦本地克隆你的 wiki，并修改 / 添加的文件，这样做：
-
-cd D:\27251\Documents\GitHub\KnowledgeGraph\KnowledgeGraph.wiki
-git add . 
-git commit -m "new files" 
-git push 
