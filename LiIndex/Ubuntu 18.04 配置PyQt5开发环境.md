@@ -146,7 +146,9 @@ sudo make install
 {
     "python.pythonPath": "/home/user/anaconda3/bin/python",
     "pyqt-integration.qtdesigner.path": "/home/user/anaconda3/bin/designer",
-    "pyqt-integration.pyuic.cmd": "/home/user/anaconda3/bin/uic"
+    // 实际使用中，调用程序生成了C代码，在settings文件里留空，
+    // VS Code设置里填pyuic5即可。
+   // "pyqt-integration.pyuic.cmd": "/home/user/anaconda3/bin/uic"
 }
 ```
 
@@ -154,8 +156,10 @@ sudo make install
 
 ```json
 {
-    "pyqt-integration.qtdesigner.path": "/usr/lib/qt5/bin//designer",
-    "pyqt-integration.pyuic.cmd": "/usr/lib/qt5/bin//uic"
+    "pyqt-integration.qtdesigner.path": "/usr/lib/qt5/bin/designer",
+    //"或者/home/user/Qt5.11.3/5.11.3/gcc_64/bin/designer"
+    "pyqt-integration.pyuic.cmd": "/usr/lib/qt5/bin/uic"
+    //"或者/home/user/Qt5.11.3/5.11.3/gcc_64/bin/uic"
 }
 ```
 
