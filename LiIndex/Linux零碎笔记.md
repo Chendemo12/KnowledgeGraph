@@ -1,5 +1,9 @@
 # Linux 零碎笔记
 
+
+
+[TOC]
+
 ## 1. ubuntu更改镜像源（软件源）
 
 ### 更新Ubuntu软件下载地址
@@ -402,4 +406,212 @@ source ~/.bashrc
 ![1573471625935](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/1573471625935.png)
 
 说明启动的是anaconda的python。
+
+
+
+## 10. 修改环境变量_1
+
+[原文链接](https://blog.csdn.net/White_Idiot/article/details/78253004)
+
+###  1 查看环境变量
+查看环境变量有三个命令：
+```bash
+env：env命令是environment的缩写，用于列出所有的环境变量；
+export：单独使用export命令也可以像env列出所有的环境变量，不过export命令还有其他额外的功能；
+echo $PATH： echo $PATH用于列出变量PATH的值，里面包含了已添加的目录。
+```
+
+### 2 设置方式
+设置环境变量通常有两种方式。
+
+#### 2.1 把你的路径加入PATH
+可以直接添加到环境变量PATH中。`$PATH`表示变量PATH的值，包含已有的目录。
+
+这种方法需要注意路径的顺序，如果遇到有同名的命令，那么PATH里面哪个目录先被查询，则那个目录下的命令就会被先执行，如下所示：
+
++  加到PATH末尾
+```bash
+export PATH=$PATH:/path/to/your/dir
+```
+
++ 加到PATH开头
+```bash
+export PATH=/path/to/your/dir:$PATH
+```
+
+#### 2.2 命名一个新的环境变量
+也可以直接命名一个新的环境变量，用于其它程序引用：
+```bash
+export VAR_NAME=value
+```
+
+### 3 作用域
+环境变量的作用域通常有三个。
+
+#### 3.1 用于当前终端
+打开一个终端，输入添加环境变量的语句：
+```bash
+export CLASS_PATH=./JAVA_HOME/lib:$JAVA_HOME/jre/lib
+```
+
+终端所添加的环境变量是临时的，只适用于当前终端，关闭当前终端或在另一个终端中，添加的环境变量无效。
+
+#### 3.2 用于当前用户
+如果只需要添加的环境变量对当前用户有效，可以写入用户主目录下的.bashrc文件：
+```bash
+vim ~/.bashrc
+```
+
+添加语句：
+```basg
+export CLASS_PATH=./JAVA_HOME/lib:$JAVA_HOME/jre/lib
+```
+注销或者重启可以使修改生效，如果要使添加的环境变量马上生效：
+```bash
+source ~/.bashrc
+```
+
+#### 3.3 用于所有用户
+要使环境变量对所有用户有效，可以修改profile文件：
+```bash
+sudo vim /etc/profile 
+```
+
+添加语句：
+```bash
+export CLASS_PATH=./JAVA_HOME/lib:$JAVA_HOME/jre/lib
+```
+注销或者重启可以使修改生效，如果要使添加的环境变量马上生效：
+```bash
+source /etc/profile
+```
+
+
+
+## 11.  修改环境变量_2
+
+[原文链接](https://blog.csdn.net/weixin_36296538/article/details/83044639)
+
+### 1. 什么是环境变量
+环境变量（environment variables）一般是指在操作系统中用来指定操作系统运行环境的一些参数，这些参数会对系统行为产生影响。
+
+比如常用的PATH环境变量，当要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统除了在当前目录下面寻找此程序外，还会到PATH中指定的路径去找。你可以在终端使用`printenv PATH`查看当前PATH变量的值。
+
+### 2. 用户环境变量和系统环境变量
+Ubuntu系统包含两类环境变量：系统环境变量和用户环境变量。系统环境变量对所有系统用户都有效，用户环境变量仅仅对当前的用户有效。
+
++ 用户环境变量可存储在以下文件中：
+```bash
+~/.profile
+~/.bashrc
+~/.bash_profile
+~/.bash_login
+```
+
++ 推荐将环境变量保存在`~/.profile`中，因为无论是通过控制台还是图形界面启动程序时，都会自动执行该文件。而`~/.bashrc`, `~/.bash_profile`, `~/.bash_login`这些文件，当通过shell启动程序时，它们也会被加载；但当通过图形界面环境启动程序时，这些文件中的环境变量设置便不可用了。
+
+    
+
++ 系统环境变量可存储在以下文件中：
+```bash
+/etc/profile
+/etc/profile.d（它是文件夹）
+/etc/bash.bashrc
+```
++   `/etc/profile`和`/etc/profile.d`都是常用的设置环境的地方。其中`/etc/profile.d`文件夹来源于`/etc/profile`，在该目录下的`*.sh`，即以sh为后缀的文件都会被加载。
+    类似地，不推荐使用`/etc/bash.bashr`c，因为在图形界面环境下启动程序时，不会加载它里边的环境变量设置。
+
+### 3. 设置永久环境变量实例（以/etc/profile为例）
+
+```bash
+gedit /etc/profile
+```
+
+在文件末尾处添加如下，保存并退出：
+```bash
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
+export PATH=$PATH:$JAVA_HOME/bin
+```
+其中，
+`export`命令：使得变量真正输出成为环境变量。
+
+等号=左边为变量名，右边为变量实际值。export后，可以通过$variable_name的形式访问变量，如$`JAVA_HOME`，即可替换为`JAVA_HOME=/usr/lib/jvm/jdk1.7.0`。
+
+PATH变量中通常有多个指定路径，中间用冒号隔开。拼接上$PATH变量，则不影响原先的路径设置。
+
+环境变量更改后，在用户下次登陆时生效。如果想立刻生效，则执行下面的语句
+```bash
+source /etc/profile
+```
+
+注意：请在使用时将路径替换为你电脑下的实际路径。
+如果只是测试，直接复制上面的命令也行，只不过最后会提示“No such file or directory”。
+
+### 4. 查看环境变量是否已经生效
+在控制台下输入
+```bash
+$JAVA_HOME
+$PATH
+```
+可以看到，环境变量已经生效了！
+
+
+
+## 12. 设置终端走代理
+
+修改文件`~/.bashrc`，原理：开机自启
+
+ 在末尾添加如下语句，删除则取消终端走代理
+
+```bash
+# 设置终端走代理
+unset all_proxy && unset ALL_PROXY
+export all_proxy="socks5://127.0.0.1:1080"
+```
+
+
+
+## 13. 设置开机自启
+
+### 1 使用gnome-session
+
+打开启动应用程序的图标，打开对应的对话框如下：
+
+[![选区_125.png](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/thum-59a41501403358.png)](http://www.mryu.top/content/uploadfile/201707/59a41501403358.png)
+
+根据界面提示进行相关操作，例如添加启动项、删除启动项以及编辑启动项
+
+### 2. 编辑rc.local脚本
+
+Ubuntu开机之后会自动执行`/etc/rc.local`文件中的脚本，所以我们可以直接在`/etc/rc.local`中添加启动脚本，但必须添加到语句`exit 0`前面才行。
+
+### 3. 通过命令添加一个Ubuntu的开机启动服务
+
+如果要添加为开机自动执行的脚本文件，可先将脚本复制或者软连接到`/etc/init.d/`目录下，然后用`update-rc.d　xxx defaults NN `命令（NN为启动顺序），将脚本添加到初始化执行的队列中区。注意如果脚本需要用到网络，则NN需要设置一个比较大的数字，如99。步骤如下：
+
+1)将你的启动脚本复制到/etc/init.d目录下（以下假设你的脚本为test）
+
+2)设置脚本文件的权限
+
+```bash
+sudo chmod 775 /etc/init.d/test
+```
+
+3)执行如下命令脚本放到启动脚本中去
+
+```bash
+cd /etc/init.d
+sudo update-rc.d test defaults 95 
+```
+
+需要注意的是数字95是脚本的启动顺序号，按照自己的需要相应的修改即可。在你有多个启动脚本，而它们之间又有先后启动的依赖关系时你就知道这个数字的具体作用了。
+
+4)卸载启动脚本
+
+```bash
+cd /etc/init.d
+sudo update-rc.d -f test remove 
+```
+
+
 

@@ -165,6 +165,25 @@ sudo make install
 
 之后在`.ui`文件上右击即可调出`PYQT`命令。
 
++ 设置`-x`参数，默认生成Python测试函数
+
+![1574670884339](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1574670884339.png)
+
+这样会在生成的`py`文件里添加调用函数：
+
+```python
+if __name__ == "__main__":
+
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    mainWindow = QtWidgets.QMainWindow()
+    ui = AdminPage()
+    ui.setupUi(mainWindow)
+    mainWindow.show()
+    sys.exit(app.exec_())
+
+```
+
 
 
 ### 2.2 Pycharm + PyQt5
