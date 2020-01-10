@@ -38,9 +38,8 @@
 
 这四种登录界面有什么区别，我目测没有发现有什么不同。折腾许久终于明白了：
 + `Ubuntu on wayland `: 是gnome新提出的一个界面，它的改动大，很多软件在他运行下会出问题。最大的改动就是配置文件改动后引起sogo不能用。
-+ `在xrog的gnome`: 选项比较成熟兼容性好。推荐新手选用。
++ `在xrog的gnome`: 经典gnome,兼容gnome老版本。选项比较成熟兼容性好。推荐新手选用。
 + `Ubuntu`: 就是Ubuntu自己的界面实际我觉得也很好，但是Ubuntu不在支持了从1804开始。
-+  `在xrog的gnome`: 经典gnome兼容gnome老版本。
 
 搜狗不能用的原因是fcitx不能用。是因为` ～/.xprofiles `配置在`way land`中不起作用。
 只要在`～/.pam_environment` 中加入如下内容，删除`.xprofiles`即可。
@@ -53,10 +52,6 @@ export XMODIFIERS="@im=fcitx"
 
 
 就可以在`way land`使用，同时不影响在`xorg`中使用。
-
-
-
-
 
 
 

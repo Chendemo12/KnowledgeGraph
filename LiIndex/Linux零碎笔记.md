@@ -69,6 +69,112 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted
 
 ![img](https://img-blog.csdn.net/20180308103439916?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxNzYyMTcz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
+## 1.2 ubuntu 阿里云源
+
+### 服务器列表
+
+------
+
+可将 [http://cn.archive.ubuntu.com/ubuntu/](https://link.jianshu.com/?t=http://cn.archive.ubuntu.com/ubuntu/) 替换为下列任意服务器：
+Ubuntu 官方**（欧洲，国内较慢，无同步延迟）**
+[http://archive.ubuntu.com/ubuntu/](https://link.jianshu.com/?t=http://archive.ubuntu.com/ubuntu/)
+Ubuntu 官方中国**（目前是阿里云）**
+[http://cn.archive.ubuntu.com/ubuntu/](https://link.jianshu.com/?t=http://cn.archive.ubuntu.com/ubuntu/)
+网易**（广东广州电信/联通千兆双线接入）**
+[http://mirrors.163.com/ubuntu/](https://link.jianshu.com/?t=http://mirrors.163.com/ubuntu/)
+搜狐**（山东联通千兆接入）**
+[http://mirrors.sohu.com/ubuntu/](https://link.jianshu.com/?t=http://mirrors.sohu.com/ubuntu/)
+阿里云**（北京万网/浙江杭州阿里云服务器双线接入）**
+[http://mirrors.aliyun.com/ubuntu/](https://link.jianshu.com/?t=http://mirrors.aliyun.com/ubuntu/)
+中国开源软件中心
+[http://mirrors.oss.org.cn/ubuntu/](https://link.jianshu.com/?t=http://mirrors.oss.org.cn/ubuntu/)
+首都在线科技
+[http://mirrors.yun-idc.com/ubuntu/](https://link.jianshu.com/?t=http://mirrors.yun-idc.com/ubuntu/)
+
+### 更新源
+
+```cpp
+sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
+```
+
+#### ubuntu 16.04
+
+```bash
+deb http://cn.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse
+##测试版源
+deb http://cn.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse
+# 源码
+deb-src http://cn.archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse
+##测试版源
+deb-src http://cn.archive.ubuntu.com/ubuntu/ xenial-proposed main restricted universe multiverse
+# Canonical 合作伙伴和附加
+deb http://archive.canonical.com/ubuntu/ xenial partner
+deb http://extras.ubuntu.com/ubuntu/ xenial main
+```
+
+#### ubuntu 15.10
+
+```list
+deb http://cn.archive.ubuntu.com/ubuntu/ wily main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ wily-security main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ wily-updates main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
+##测试版源
+deb http://cn.archive.ubuntu.com/ubuntu/ wily-proposed main restricted universe multiverse
+# 源码
+deb-src http://cn.archive.ubuntu.com/ubuntu/ wily main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ wily-security main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ wily-updates main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ wily-backports main restricted universe multiverse
+##测试版源
+deb-src http://cn.archive.ubuntu.com/ubuntu/ wily-proposed main restricted universe multiverse
+# Canonical 合作伙伴和附加
+deb http://archive.canonical.com/ubuntu/ wily partner
+deb http://extras.ubuntu.com/ubuntu/ wily main
+```
+
+#### ubuntu 14.04
+
+```list
+deb http://cn.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+##测试版源
+deb http://cn.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse
+# 源码
+deb-src http://cn.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
+##测试版源
+deb-src http://cn.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted universe multiverse
+# Canonical 合作伙伴和附加
+deb http://archive.canonical.com/ubuntu/ trusty partner
+deb http://extras.ubuntu.com/ubuntu/ trusty main
+```
+
+------
+
+#### debian jessie
+
+```cpp
+deb http://mirrors.163.com/debian/ jessie main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ jessie-backports main non-free contrib
+deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib
+```
+
 
 
 ## 2. Ubuntu软件操作的相关命令
@@ -614,4 +720,83 @@ sudo update-rc.d -f test remove
 ```
 
 
+
+## 14. 设置代理，提高git速度
+
+### 1. 简单方法
+
++   (开启ssr全局代理)；
+
++    使用`http`协议，本地存储账号密码。
+
+    +   进入你的项目目录，输入:
+
+        ```bash
+        git config --global credential.helper store
+        ```
+
+    +   之后会在本地生成一个文本，上边记录你的账号和密码。当然这些你可以不用关心。
+    +   接着再操作一次`git pull`，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
+
++   同时其他仓库使用`http`，同样不需要输入账号密码。
+
++   实测速度
+
+    ![image-20191219194200925](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/image-20191219194200925.png)
+    
+    
+
+### 2. 用 git 内置代理，直接走系统中运行的代理工具中转，比如，你的 SS 本地端口是 1080（一般port均为1080），那么可以如下方式走代理：
+
+```csharp
+git config --global http.proxy socks5://127.0.0.1:1080
+git config --global https.proxy socks5://127.0.0.1:1080
+```
+
+编辑`~/.gitconfig`文件
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-a7f7b544c5a7bd2a.webp)
+
+Enter之后进入vim，按i进行insert
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-d3c0ee4dc2458ab2.webp)
+
+按Esc退出，输入:wq保存
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-9d55728b6ce9727a.webp)
+
+
+
+### 3. 此外，git clone或者git push特别慢，并不是因为 **[http://github.com](https://links.jianshu.com/go?to=http%3A%2F%2Fgithub.com)** 的这个域名被限制了。而是 **[http://github.global.ssl.fastly.Net](https://links.jianshu.com/go?to=http%3A%2F%2Fgithub.global.ssl.fastly.Net)** 这个域名被限制了。那么可以在hosts文件里进行绑定映射。
+
+#### 具体步骤如下：
+
+在terminal输入命令并输入开机密码，Enter确认
+
+
+
+```undefined
+sudo vi /etc/hosts
+```
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-2ce00e80a7acc931.webp)
+
+
+
+然后依旧在vim上编辑，命令如下
+
+```cpp
+151.101.72.249 http://global-ssl.fastly.Net
+192.30.253.112 http://github.com
+```
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-0e21c4563955dc87.webp)
+
+保存之后就可以了。
+
+接下来，你可以在clone一次，ssh或https协议都行，速度翻了好几倍！！！
+
+以下正是亲测的结果，速度已经到达了200多KiB/s！！！
+
+![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-3a6d1c8f13abf48c.webp)
 
