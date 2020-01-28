@@ -2,7 +2,7 @@
 
 | 网络地址  | 修改时间 | 文件大小KB |
 | :-- | :-: | :-: |
-| [MyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MyIndex) | 2019-11-22 | 1.83 |
+| [MyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MyIndex) | 2020-01-28 | 2.0 |
 | [Git-tips.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git-tips) | 2019-11-10 | 37.97 |
 | [有道智云短语音识别API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云短语音识别API开发文档) | 2019-11-10 | 9.63 |
 | [百度翻译API.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/百度翻译API) | 2019-11-10 | 28.0 |

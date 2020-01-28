@@ -1,0 +1,136 @@
+{
+    //文件头部注释信息
+    "HEADER":{
+        "prefix": "header",
+		"body":
+		[
+            "# -*- encoding: utf-8 -*-",
+            "# @Author:  LiChenguang",
+            "# @Data  :  $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
+            "# @Email :  chendemo12@gmail.com",
+			"# @sys   :  Ubuntu 18.04",
+			"# @WebSite: www.searcher.ltd",
+			"# @Last Modified time:  $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
+            "",//空行
+			"$0"//换行
+		],
+    },
+
+    //函数定义
+    "def":{
+        "prefix": "def",
+        "body": [
+            "def $1($2):",
+            "    \"\"\"",
+            "    param $2:",
+            "    return:",
+            "    \"\"\"",
+            "    $0"
+        ],
+    },
+
+    //测试代码
+    "ifna":{
+        "prefix": "ifna",
+        "body": [
+            "if __name__ == \"__main__\":",
+            "",
+            "   $0"//换行
+        ]
+
+    },
+
+    //调用QT文件代码片段，逻辑函数
+    "callmw":{
+        "prefix": "callmw",
+        "body": [
+            "import sys",
+            "",
+            "from PyQt5 import QtCore, QtGui, QtWidgets",
+            "from PyQt5.QtWidgets import (QApplication, QDesktopWidget, QFileDialog,QMainWindow, QMessageBox, QTableWidget,QTableWidgetItem, QWidget,QAbstractItemView)",
+            "",
+            "from Ui_userMGT import *   # 导入视图文件",
+            "",
+            "class CallView(QMainWindow,Ui_MainWindow):",
+            "    def __init__(self,parent=None):",
+            "        super(CallView,self).__init__(parent)",
+            "        self.setupUi(self)",
+            "        self.initUI()",
+            "",
+            "    def initUI(self):",
+            "",
+            "        # 添加按钮事件",
+            "        self.center()",
+            "        pass",
+            "",
+            "",
+            "",
+            "",
+            "    def center(self):",
+            "        #窗口居中",
+            "        qr = self.frameGeometry()",
+            "        cp = QDesktopWidget().availableGeometry().center()",
+            "        qr.moveCenter(cp)",
+            "        self.move(qr.topLeft())",
+
+            "",
+            "",
+            "",
+            "",
+            "if __name__ == \"__main__\":",
+            "",
+            "    app = QApplication(sys.argv)",
+            "    view = CallView()",
+            "    view.show()",
+            "    sys.exit(app.exec_())",
+
+        ]
+    },
+
+    //调用QT文件代码片段，逻辑函数
+    "callfm":{
+        "prefix": "callfm",
+        "body": [
+            "import sys",
+            "",
+            "from PyQt5 import QtCore, QtGui, QtWidgets",
+            "from PyQt5.QtWidgets import (QApplication, QDesktopWidget, QFileDialog,QMainWindow, QMessageBox, QTableWidget,QTableWidgetItem, QWidget,QAbstractItemView)",
+            "",
+            "from Ui_userMGT import *   # 导入视图文件",
+            "",
+            "class CallView(QMainWindow,Ui_Form):",
+            "    def __init__(self,parent=None):",
+            "        super(CallView,self).__init__(parent)",
+            "        self.setupUi(self)",
+            "        self.initUI()",
+            "",
+            "    def initUI(self):",
+            "",
+            "        # 添加按钮事件",
+            "        self.center()",
+            "        pass",
+            "",
+            "",
+            "",
+            "",
+            "    def center(self):",
+            "        #窗口居中",
+            "        qr = self.frameGeometry()",
+            "        cp = QDesktopWidget().availableGeometry().center()",
+            "        qr.moveCenter(cp)",
+            "        self.move(qr.topLeft())",
+
+            "",
+            "",
+            "",
+            "",
+            "if __name__ == \"__main__\":",
+            "",
+            "    app = QApplication(sys.argv)",
+            "    view = CallView()",
+            "    view.show()",
+            "    sys.exit(app.exec_())",
+
+        ]
+    }
+}
