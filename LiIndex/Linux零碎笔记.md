@@ -528,9 +528,11 @@ echo $PATH： echo $PATH用于列出变量PATH的值，里面包含了已添加�
 ```
 
 ### 2 设置方式
+
 设置环境变量通常有两种方式。
 
 #### 2.1 把你的路径加入PATH
+
 可以直接添加到环境变量PATH中。`$PATH`表示变量PATH的值，包含已有的目录。
 
 这种方法需要注意路径的顺序，如果遇到有同名的命令，那么PATH里面哪个目录先被查询，则那个目录下的命令就会被先执行，如下所示：
@@ -800,3 +802,162 @@ sudo vi /etc/hosts
 
 ![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-3a6d1c8f13abf48c.webp)
 
+
+
+## 15. pip 报错
+
++ pip install报错：Missing dependencies for SOCKS support解决方法
+
+解决方法
+依次输入下面命令：
+
+`Unset socks proxy`
+
+```bash
+unset all_proxy
+unset ALL_PROXY
+```
+
+`Install missing dependencies:`
+
+```bash
+pip install pysocks
+```
+
+`Reset proxy`
+
+```bash
+source ~/.bashrc然后再pip install就可以正常使用了
+```
+
+
+
++ ImportError: cannot import name 'main'
+
+因为将pip更新为10.0.0后库里面的函数有所变动造成这个问题。 
+
+解决方法如下：
+
+方法一：
+
+```bash
+sudo gedit /usr/bin/pip
+
+将原来的
+from pip import main
+
+改为
+from pip._internal import main
+```
+
+
+方法二：
+
+```bash
+sudo gedit /usr/bin/pip
+```
+
+```python
+# 将原来的：
+from pip import main
+if __name__ == '__main__':
+    sys.exit(main())
+# 改为：
+
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+```
+
+
+
+## 16 Pipenv install 出错
+
++ 解决办法：[link](https://stackoverflow.com/questions/37637872/virtualenv-oserror-setuptools-pip-wheel-failed-with-error-code-1)
+
+```bash
+sudo apt-get update
+
+sudo apt-get install python-software-properties
+
+sudo apt-get install apt-file
+
+sudo apt-file update
+
+sudo apt-get install software-properties-common
+
+sudo apt-get install <your filename>  
+```
+
+
+
+## virtualenv 创建Python虚拟环境
+
+在开发Python应用程序的时候，系统安装的Python3只有一个版本：3.6。所有第三方的包都会被`pip`安装到Python3的`site-packages`目录下。
+
+首先，我们用`pip`安装virtualenv：
+
+```bash
+$ pip3 install virtualenv
+```
+
+然后，假定我们要开发一个新的项目，需要一套独立的Python运行环境，可以这么做：
+
+第一步，创建目录：
+
+```bash
+Mac:~ michael$ mkdir myproject
+Mac:~ michael$ cd myproject/
+Mac:myproject michael$
+```
+
+第二步，创建一个独立的Python运行环境，命名为`venv`：
+
+```bash
+Mac:myproject michael$ virtualenv --no-site-packages venv
+
+    Using base prefix '/usr/local/.../Python.framework/Versions/3.4'
+    New python executable in venv/bin/python3.4
+    Also creating executable in venv/bin/python
+    Installing setuptools, pip, wheel...done.
+```
+
+命令`virtualenv`就可以创建一个独立的Python运行环境，我们还加上了参数`--no-site-packages`，这样，已经安装到系统Python环境中的所有第三方包都不会复制过来，这样，我们就得到了一个不带任何第三方包的“干净”的Python运行环境。
+
+新建的Python环境被放到当前目录下的`venv`目录。有了`venv`这个Python环境，可以用`source`进入该环境：
+
+```bash
+Mac:myproject michael$ source venv/bin/activate
+    (venv)Mac:myproject michael$
+```
+
+注意到命令提示符变了，有个`(venv)`前缀，表示当前环境是一个名为`venv`的Python环境。
+
+下面正常安装各种第三方包，并运行`python`命令：
+
+```bash
+(venv)Mac:myproject michael$ pip install jinja2
+    ...
+    Successfully installed jinja2-2.7.3 markupsafe-0.23
+(venv)Mac:myproject michael$ python myapp.py
+    ...
+```
+
+在`venv`环境下，用`pip`安装的包都被安装到`venv`这个环境下，系统Python环境不受任何影响。也就是说，`venv`环境是专门针对`myproject`这个应用创建的。
+
+退出当前的`venv`环境，使用`deactivate`命令：
+
+```bash
+(venv)Mac:myproject michael$ deactivate 
+Mac:myproject michael$ 
+```
+
+此时就回到了正常的环境，现在`pip`或`python`均是在系统Python环境下执行。
+
+完全可以针对每个应用创建独立的Python运行环境，这样就可以对每个应用的Python环境进行隔离。
+
+virtualenv是如何创建“独立”的Python运行环境的呢？原理很简单，就是把系统Python复制一份到virtualenv的环境，用命令`source venv/bin/activate`进入一个virtualenv环境时，virtualenv会修改相关环境变量，让命令`python`和`pip`均指向当前的virtualenv环境。
+
+### 小结
+
+virtualenv为应用提供了隔离的Python运行环境，解决了不同应用间多版本的冲突问题。

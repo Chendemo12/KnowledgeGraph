@@ -156,10 +156,10 @@ sudo make install
 
 ```json
 {
-    "pyqt-integration.qtdesigner.path": "/usr/lib/qt5/bin/designer",
-    //"或者/home/user/Qt5.11.3/5.11.3/gcc_64/bin/designer"
-    "pyqt-integration.pyuic.cmd": "/usr/lib/qt5/bin/uic"
-    //"或者/home/user/Qt5.11.3/5.11.3/gcc_64/bin/uic"
+    "pyqt-integration.qtdesigner.path": "/home/user/Qt5.11.3/5.11.3/gcc_64/bin/designer",
+    //"或者/usr/lib/qt5/bin/designer"
+    "pyqt-integration.pyuic.cmd": "/home/user/Qt5.11.3/5.11.3/gcc_64/bin/uic"
+    //"或者/usr/lib/qt5/bin/uic"
 }
 ```
 
