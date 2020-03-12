@@ -509,7 +509,7 @@ source ~/.bashrc
 
 然后输入python得到显示
 
-![1573471625935](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/1573471625935.png)
+![1573471625935](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221344.webp)
 
 说明启动的是anaconda的python。
 
@@ -685,7 +685,7 @@ export all_proxy="socks5://127.0.0.1:1080"
 
 打开启动应用程序的图标，打开对应的对话框如下：
 
-[![选区_125.png](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/thum-59a41501403358.png)](http://www.mryu.top/content/uploadfile/201707/59a41501403358.png)
+[![选区_125.png](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221345.png)](http://www.mryu.top/content/uploadfile/201707/59a41501403358.png)
 
 根据界面提示进行相关操作，例如添加启动项、删除启动项以及编辑启动项
 
@@ -744,7 +744,7 @@ sudo update-rc.d -f test remove
 
 +   实测速度
 
-    ![image-20191219194200925](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/image-20191219194200925.png)
+    ![image-20191219194200925](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221346.webp)
     
     
 
@@ -757,15 +757,15 @@ git config --global https.proxy socks5://127.0.0.1:1080
 
 编辑`~/.gitconfig`文件
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-a7f7b544c5a7bd2a.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221347.webp)
 
 Enter之后进入vim，按i进行insert
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-d3c0ee4dc2458ab2.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221348.webp)
 
 按Esc退出，输入:wq保存
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-9d55728b6ce9727a.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221349.webp)
 
 
 
@@ -781,7 +781,7 @@ Enter之后进入vim，按i进行insert
 sudo vi /etc/hosts
 ```
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-2ce00e80a7acc931.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221350.webp)
 
 
 
@@ -792,7 +792,7 @@ sudo vi /etc/hosts
 192.30.253.112 http://github.com
 ```
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-0e21c4563955dc87.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221351.png)
 
 保存之后就可以了。
 
@@ -800,7 +800,7 @@ sudo vi /etc/hosts
 
 以下正是亲测的结果，速度已经到达了200多KiB/s！！！
 
-![img](Linux%E9%9B%B6%E7%A2%8E%E7%AC%94%E8%AE%B0.assets/2929536-3a6d1c8f13abf48c.webp)
+![img](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221352.png)
 
 
 

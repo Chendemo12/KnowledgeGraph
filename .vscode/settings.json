@@ -1,7 +1,7 @@
 {
     //PyQt settings
     "pyqt-integration.qtdesigner.path": "/home/lichenguang/anaconda3/bin/designer",
-    "python.pythonPath": "/home/lichenguang/anaconda3/bin/python",
+    "python.pythonPath": "C:\\Users\\chenguang\\.virtualenvs\\chenguang-3yUuRFCd\\Scripts\\python.exe",
     "editor.fontFamily": "monospace",//编辑器字体设置
     "terminal.integrated.fontFamily": "monospace",// 终端字体设置
     "workbench.colorCustomizations" :

@@ -6,7 +6,7 @@
 
 + 首先确认下Python的版本，需要安装python3+。
 
-![1573294425542](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573294425542.png)
+![1573294425542](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221538.png)
 
 
 
@@ -131,14 +131,14 @@ sudo make install
 
 去VS Code扩展商店安装PYQT扩展包
 
-![1573295603612](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573295603612.png)
+![1573295603612](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221539.png)
 
 按照要求做下配置，这里需要在设置里配置`pyqt-integration.qtdesigner.path`、`pyqt-integration.pyuic.cmd`两个地方，
 
 + `pyqt-integration.qtdesigner.path`：designer的路径,
 + `pyqt-integration.pyuic.cmd`：uic程序的路径,
 
-![1573295688412](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573295688412.png)
+![1573295688412](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221540.png)
 
 + 我这里用的是anaconda3，
 
@@ -167,7 +167,7 @@ sudo make install
 
 + 设置`-x`参数，默认生成Python测试函数
 
-![1574670884339](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1574670884339.png)
+![1574670884339](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221541.png)
 
 这样会在生成的`py`文件里添加调用函数：
 
@@ -190,11 +190,11 @@ if __name__ == "__main__":
 
 打开`File`——`Setting`——`Tools`——`External Tools`，添加如下配置：
 
-![1573296505734](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573296505734.png)
+![1573296505734](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221542.png)
 
 **添加designer：**
 
-![1573296593983](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573296593983.png)
+![1573296593983](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221543.png)
 
 + `Name`、`Group`、`Description`可以自由写；
 + `Program`：填写`designer`的路径，同`VS Code填写的路径`
@@ -203,7 +203,7 @@ if __name__ == "__main__":
 
 **添加PyUIC**:
 
-![1573296923844](Ubuntu%2018.04%20%E9%85%8D%E7%BD%AEPyQt5%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.assets/1573296923844.png)
+![1573296923844](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221544.png)
 
 + `Name`、`Group`、`Description`可以自由写；
 + `Program`：填写`Python`的路径，比如anaconda——`/home/userg/anaconda3/bin/python3.7`；

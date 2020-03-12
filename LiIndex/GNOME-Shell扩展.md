@@ -32,7 +32,7 @@ sudo apt-get install gnome-tweaks
 sudo apt-get install gnome-shell-extensions
 ```
 
-![image-20191218223024654](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218223024654.png)
+![image-20191218223024654](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221003.png)
 
 安装完后需要重启电脑才能生效，重启电脑后，我们打开 gnome-tweaks 软件，再点到 extensions 菜单，你会发现这个时候多出了很多拓展插件。
 
@@ -46,7 +46,7 @@ sudo apt-get install gnome-shell-extensions
 
 +   只需要安装 Dash To Dock，您的全部 Dash 偏好设置都将以 dock 形式呈现以供访问。Dash To Dock 可以显示在屏幕左侧、右侧或者底部，甚至能够自动隐藏。要对其进行设置，右键点击九方形网格图标（即显示应用按钮）即可。
 
-![image-20191218223405683](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218223405683.png)
+![image-20191218223405683](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221004.png)
 
 
 
@@ -56,7 +56,7 @@ sudo apt-get install gnome-shell-extensions
 
 在安装之后，Clipboard Indicator 会出现在顶部面板当中，用以提供曾经复制至剪贴板的全部历史记录。只需要点击该标识而后选择要使用的文本内容（如图二），再配合 `Ctrl+V` 即可完成历史文本复制。
 
-![image-20191218223725767](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218223725767.png)
+![image-20191218223725767](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221005.png)
 
 
 
@@ -126,7 +126,7 @@ sudo apt-get install gnome-shell-extensions
 
 +   该插件将Ubuntu左上角的活动变成了应用程序菜单，效果颇像elementary OS。
 
-![image-20191218224119152](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218224119152.png)
+![image-20191218224119152](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221006.png)
 
 
 
@@ -134,7 +134,7 @@ sudo apt-get install gnome-shell-extensions
 
 该插件通过设置可以自动将打开的应用按照设置移动到指定的工作区。
 
-![image-20191218224641407](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218224641407.png)
+![image-20191218224641407](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221007.png)
 
 
 
@@ -142,7 +142,7 @@ sudo apt-get install gnome-shell-extensions
 
 +    快速连接蓝牙设备，插件会在蓝牙开关下显示最近连接的设备。
 
-![image-20191218225032983](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218225032983.png)
+![image-20191218225032983](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221008.png)
 
 
 
@@ -150,7 +150,7 @@ sudo apt-get install gnome-shell-extensions
 
 +   添加状态栏(顶栏)背景模糊效果，和`Dynamic Top Bar`效果相反，
 
-![image-20191218225207730](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218225207730.png)
+![image-20191218225207730](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221009.png)
 
 
 
@@ -158,7 +158,7 @@ sudo apt-get install gnome-shell-extensions
 
 +   会将顶栏变成类似于为windows的状态栏，
 
-![image-20191218225413120](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218225413120.png)
+![image-20191218225413120](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221010.png)
 
 
 
@@ -166,7 +166,7 @@ sudo apt-get install gnome-shell-extensions
 
 +   顶栏文件浏览器
 
-![image-20191218225715597](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218225715597.png)
+![image-20191218225715597](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221011.png)
 
 
 
@@ -185,6 +185,4 @@ sudo apt-get install gnome-shell-extensions
 ### 18). Openweather
 
 +   天气插件
-
-![image-20191218225949489](GNOME-Shell%E6%89%A9%E5%B1%95.assets/image-20191218225949489.png)
 

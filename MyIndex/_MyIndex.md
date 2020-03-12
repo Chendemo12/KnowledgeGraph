@@ -2,12 +2,12 @@
 
 | 网络地址  | 修改时间 | 文件大小KB |
 | :-- | :-: | :-: |
-| [MyIndex.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MyIndex) | 2020-01-28 | 2.0 |
-| [Git-tips.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git-tips) | 2019-11-10 | 37.97 |
-| [有道智云短语音识别API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云短语音识别API开发文档) | 2019-11-10 | 9.63 |
-| [百度翻译API.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/百度翻译API) | 2019-11-10 | 28.0 |
-| [有道智云实时语音识别开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云实时语音识别开发文档) | 2019-11-10 | 9.64 |
-| [MySQLGrammar.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MySQLGrammar) | 2019-11-10 | 9.54 |
-| [有道云文本翻译API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道云文本翻译API开发文档) | 2019-11-10 | 15.94 |
-| [Git.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git) | 2019-12-11 | 37.37 |
-| [Git教程.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git教程) | 2019-11-10 | 108.85 |
+| [Git-tips.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git-tips) | 2020-02-29 | 39.13 |
+| [Git.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git) | 2020-02-29 | 38.45 |
+| [Git教程.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/Git教程) | 2020-02-29 | 111.62 |
+| [HTML标签.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/HTML标签) | 2020-03-12 | 6.75 |
+| [MySQLGrammar.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/MySQLGrammar) | 2020-02-29 | 9.9 |
+| [有道云文本翻译API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道云文本翻译API开发文档) | 2020-02-29 | 16.33 |
+| [有道智云实时语音识别开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云实时语音识别开发文档) | 2020-02-29 | 9.96 |
+| [有道智云短语音识别API开发文档.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/有道智云短语音识别API开发文档) | 2020-02-29 | 9.9 |
+| [百度翻译API.md](https://github.com/Chendemo12/KnowledgeGraph/wiki/百度翻译API) | 2020-02-29 | 28.61 |

@@ -77,7 +77,7 @@ export QT_IM_MODULE="fcitx"
 gOpt=#gOptExt=-multiplygTemplateExt=("wpt" "dot" "dotx")**
 ```
 
-![1573124208699](/home/lichenguang/.config/Typora/typora-user-images/1573124208699.png)
+
 
 
 
@@ -97,7 +97,7 @@ export QT_IM_MODULE="fcitx"
 gOpt=#gOptExt=-multiply
 ```
 
-![1573124308928](/home/lichenguang/.config/Typora/typora-user-images/1573124308928.png)
+![1573124208699](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312222106.png)
 
 
 
@@ -105,7 +105,7 @@ gOpt=#gOptExt=-multiply
 + 打开终端输入：
 
 ```bash
-sudo vim /usr/bin/wpp
+sudo vim /usr/bin/wps
 ```
 
 + 添加以下文字到打开的文本中（添加到“#!/bin/bash”下面）：
@@ -114,6 +114,10 @@ sudo vim /usr/bin/wpp
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE="fcitx"
 ```
+
+![1573124208699](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312222215.png)
+
+
 
 
 
@@ -144,11 +148,4 @@ xhost +
 
 通过执行这条命令，就授予了其它用户访问当前屏幕的权限，于是就可以以另外的用户运行需要运行的程序了。
 
-
-
-
-
-
-
-
-
+![1573127996915](https://gitee.com//chendemo12/FigureBed/raw/master//PicGo//20200312221908.png)

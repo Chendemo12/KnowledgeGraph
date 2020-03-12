@@ -1,14 +1,17 @@
 # -*- encoding: utf-8 -*-
-# @Author  :  LiChenguang
-# @Data  :  2019-09-24
-# @Email  :  chendemo12@gmail.com
-# @sys  :  elementary OS
-# @WebSite  :  www.searcher.ltd
-# @Last Modified time  :  2019/11/10
+# @Author:  LiChenguang
+# @Data  :  2020/03/12
+# @Email :  chendemo12@gmail.com
+# @sys   :  Ubuntu 18.04
+# @WebSite: www.searcher.ltd
+# @Last Modified time:  2020/03/12
+
+
 
 
 import os
 import get_FileInfo as F
+
 
 
 def web_indexCreate(folder):
